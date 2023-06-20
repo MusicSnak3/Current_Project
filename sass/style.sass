@@ -301,6 +301,7 @@ nav
       padding-left: 50px
       margin-top: 22px
       li
+         position: relative
          font-size: 17px
          font-weight: 300
          line-height: 24px
@@ -308,3 +309,22 @@ nav
          &::before
             content: ''
             display: block
+            position: absolute
+            left: -32px
+            top: 3px
+            width: 21px
+            height: 20px
+            background: url('../icons/check_blue.svg') center (center/cover) no-repeat
+   &_descr
+      margin-top: 25px
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      color: #1ca8c3
+   .warning
+      .require_title
+         color: $second-color
+      .require_list
+         li
+            &::before
+               background: url('../icons/check_red.svg') center (center/cover) no-repeat
